@@ -1,4 +1,5 @@
 import { ArrowRightFilled } from "../components/icons/ArrowRightFilled"
+import pizzaImage from '../assets/images/pizza2.png';
 
 function Home() {
   return (
@@ -17,8 +18,10 @@ function Home() {
                     <span className="inline-block ml-3 transition-transform ease-in-out group-hover:translate-x-2">
                      <ArrowRightFilled/>
                     </span>
-                
                 </button>
+            </div>
+            <div>
+                 <img src={pizzaImage} alt="Pizza" width={550} height={550}/>
             </div>
          </section>
     </div>
