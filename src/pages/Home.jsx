@@ -58,22 +58,110 @@ function Home() {
 
             <div className="w-full p-1">
               <div className="flex text-2xl items-center h-full p-2 rounded">
-                <BadgeCheck className="text-[#F38339] w-10 h-10 mr-4"/>
+                <BadgeCheck className="text-[#F38339] w-10 h-10 mr-4" />
                 <span className="font-bold title-font">Perfect test</span>
               </div>
             </div>
             <div className="w-full p-1">
               <div className="flex text-2xl items-center h-full p-2 rounded">
-                <BadgeCheck className="text-[#F38339] w-10 h-10 mr-4"/>
+                <BadgeCheck className="text-[#F38339] w-10 h-10 mr-4" />
                 <span className="font-bold title-font">Prepared quickly</span>
               </div>
             </div>
             <div className="w-full p-1">
               <div className="flex text-2xl items-center h-full p-2 rounded">
-                <BadgeCheck className="text-[#F38339] w-10 h-10 mr-4"/>
-                <span className="font-bold title-font">Guarented food hygeine</span>
+                <BadgeCheck className="text-[#F38339] w-10 h-10 mr-4" />
+                <span className="font-bold title-font">
+                  Guarented food hygeine
+                </span>
               </div>
             </div>
+            <div className="py-4 px-5 mx-auto">
+                  <div className="flex justify-center py-4">
+                         <div className="inline-flex w-16 h-1 bg-yellow-500 rounded-full"></div>
+                  </div>
+            </div>
+              <div className="bg-transparent py-10 px-5">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  {/* Order Food */}
+                  <div className="bg-transparent p-6 rounded-lg ">
+                    <div className="flex justify-center items-center bg-white w-16 h-16 rounded-full mx-auto">
+                      {/* Icon */}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-8 h-8 text-orange-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="mt-4 text-lg font-bold">Order Food!</h3>
+                    <p className="mt-2 text-gray-600">
+                      As easy as never ever before! Now with our advanced stuff,
+                      ordering food is a piece of cake!
+                    </p>
+                  </div>
+
+                  {/* Pickup Food */}
+                  <div className="bg-transparent p-6 rounded-lg">
+                    <div className="flex justify-center items-center bg-white w-16 h-16 rounded-full mx-auto">
+                      {/* Icon */}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-8 h-8 text-orange-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M3 10h11l4 8H3l4-8z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="mt-4 text-lg font-bold">Pickup Food!</h3>
+                    <p className="mt-2 text-gray-600">
+                      Pick-Up your food if you are taking it away or just seat,
+                      relax and have it on your table when ready!
+                    </p>
+                  </div>
+                  
+                  {/* Enjoy Food */}
+                  <div className="bg-transparent p-6 rounded-lg">
+                    <div className="flex justify-center items-center bg-white w-16 h-16 rounded-full mx-auto">
+                      {/* Icon */}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-8 h-8 text-orange-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M4 6h16M4 10h16M10 14h4"
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="mt-4 text-lg font-bold">Enjoy Food!</h3>
+                    <p className="mt-2 text-gray-600">
+                      As soon as you get your food, you can enjoy it till the
+                      last piece of it and come back soon for another one!
+                    </p>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </section>
