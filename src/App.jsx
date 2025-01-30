@@ -1,13 +1,15 @@
-import Layout from "./Layouts/Layout"
+import { Route,Routes } from "react-router-dom"
 import Home from "./pages/Home"
+import Signup from "./pages/auth/Signup"
 
 function App() {
 
   return (
     <>
-      <Layout>
-         <Home/>
-      </Layout>
+       <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/auth/signup" element={<Signup/>}/>
+       </Routes>
     </>
   )
 }
