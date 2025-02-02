@@ -3,8 +3,19 @@ import pizzaImage from "../assets/images/pizza2.png";
 import cookingImage from "../assets/images/cooking1.png";
 import { BadgeCheck } from "../components/icons/CheckMark";
 import Layout from "../Layouts/Layout";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getAllProduct } from "../Redux/slices/ProductSlice";
 
 function Home() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    //This will be call when components mounts
+    dispatch(getAllProduct());
+  },[])
+
+  const {productData} = useSelector((state) => state.product)
+
   return (
     <Layout>
     <div>
@@ -167,6 +178,7 @@ function Home() {
           </div>
         </div>
       </section>
+      {productData.map((product) => <div key={product._id}>{product.productName}</div>)}
       </div>
     </Layout>
   );
